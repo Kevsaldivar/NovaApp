@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Nova App</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">SIGN IN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="email_input">Enter your Email</string>
+    <string name="password_input">Enter your Password</string>"
 </resources>
+

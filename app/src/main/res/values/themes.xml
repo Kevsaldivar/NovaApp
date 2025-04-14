@@ -5,5 +5,32 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <!-- White button -->
+
     <style name="Theme.NovaApp" parent="Base.Theme.NovaApp" />
+
+    <style name="Widget.App.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">#FF000000</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <!-- Black button -->
+
+    <style name="Widget.App.Button.SolidWithBorder" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/black</item>
+        <item name="strokeColor">#FF000000</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/white</item>  <!-- Color del texto blanco -->
+    </style>
+
+    <!-- App Logo -->
+
+    <style name="RoundedCornersWithBorder" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+        <item name="strokeWidth">2dp</item>  <!-- Ajusta el grosor del borde -->
+    </style>
+
 </resources>
+
+
