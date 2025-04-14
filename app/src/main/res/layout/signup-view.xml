@@ -8,32 +8,39 @@
     android:padding="16dp"
     tools:context=".SignIn">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="24dp"
-         />
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/app_logo"
-        android:background="@drawable/circular_image_background"
-        android:clipToOutline="true" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="24dp"
         />
-
+    
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:text="@string/sign_in"
+        android:text="@string/create_account"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_gravity="start"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:layout_gravity="start"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:autofillHints="emailAddress"
+        android:hint="@string/username_input"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="@color/text_color_input"
+        android:textColorHint="@color/text_color_hint" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -71,28 +78,37 @@
         android:textColor="@color/text_color_input"
         android:textColorHint="@color/text_color_hint"
         android:minHeight="48dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_password"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/log_in"
-        android:backgroundTint="@color/black"
-        style="@style/Widget.App.Button.SolidWithBorder"
-        />
-
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:inputType="textPassword"
+        android:autofillHints="textPassword"
+        android:hint="@string/confirm_password_input"
+        android:textColor="@color/text_color_input"
+        android:textColorHint="@color/text_color_hint"
+        android:minHeight="48dp" />
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/sign_up"
-        android:textColor="@color/black"
-        style="@style/Widget.App.Button.Outlined"
-        android:layout_gravity="end"/>
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/create_account_button"
+        android:backgroundTint="@color/black"
+        style="@style/Widget.App.Button.SolidWithBorder"
+        />
+
 
 </LinearLayout>
