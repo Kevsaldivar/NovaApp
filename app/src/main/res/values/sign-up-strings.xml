@@ -1,0 +1,9 @@
+
+<resources>
+    <string name="create_account">Create Account</string>"
+    <string name="user_name">User Name</string>
+    <string name="username_input">Enter your User Name</string>"
+    <string name="confirm_password">Confirm your Password</string>
+    <string name="confirm_password_input">Confirm your Password</string>
+    <string name="create_account_button">CREATE ACCOUNT</string>"
+</resources>
