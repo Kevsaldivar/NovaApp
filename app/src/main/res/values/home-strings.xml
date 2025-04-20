@@ -1,0 +1,9 @@
+<resources>
+    <string name="welcome">Hello user!, select a category</string>
+    <string name="action_category">Action</string>
+    <string name="drama_category">Drama</string>
+    <string name="family_category">Family</string>
+    <string name="anime_category">Anime</string>
+    <string name="more_category">More</string>
+
+</resources>
