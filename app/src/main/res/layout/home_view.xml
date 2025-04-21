@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="16dp"
-    tools:context=".SignIn">
+    tools:context=".SelectCategorie">
 
     <Space
         android:id="@+id/topSpace"

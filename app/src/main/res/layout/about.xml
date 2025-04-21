@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="16dp"
-    tools:context=".SignIn">
+    tools:context=".AboutApp">
 
     <Space
         android:layout_width="match_parent"
