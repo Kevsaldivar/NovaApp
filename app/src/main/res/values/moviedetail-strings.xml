@@ -1,0 +1,10 @@
+<resources>
+    <string name="director">Director</string>
+    <string name="year">Year</string>
+    <string name="genre">Genre</string>
+    <string name="description">Description</string>
+    <string name="edit_movie">Edit Movie</string>
+    <string name="delete_movie">Delete Movie</string>
+    <string name="back">Back</string>
+    <string name="search">Search</string>"
+</resources>
