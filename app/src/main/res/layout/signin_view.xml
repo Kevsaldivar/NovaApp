@@ -9,11 +9,12 @@
     tools:context=".SignIn">
 
     <Space
+        android:id="@+id/topSpace"
         android:layout_width="match_parent"
-        android:layout_height="24dp"
-         />
+        android:layout_height="24dp" />
 
     <ImageView
+        android:id="@+id/logoImageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:contentDescription="@string/app_name"
@@ -22,20 +23,22 @@
         android:clipToOutline="true" />
 
     <Space
+        android:id="@+id/middleSpace"
         android:layout_width="match_parent"
-        android:layout_height="24dp"
-        />
+        android:layout_height="24dp" />
 
     <TextView
+        android:id="@+id/signInTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="@string/sign_in"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_gravity="start"/>
+        android:layout_gravity="start" />
 
     <TextView
+        android:id="@+id/emailLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/email"
@@ -43,6 +46,7 @@
         android:layout_marginBottom="8dp" />
 
     <EditText
+        android:id="@+id/emailEditText"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -54,6 +58,7 @@
         android:minHeight="48dp" />
 
     <TextView
+        android:id="@+id/passwordLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/password"
@@ -62,6 +67,7 @@
         android:layout_marginBottom="8dp" />
 
     <EditText
+        android:id="@+id/passwordEditText"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -73,26 +79,28 @@
         android:minHeight="48dp" />
 
     <Button
+        android:id="@+id/loginButton"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:text="@string/log_in"
         android:backgroundTint="@color/black"
-        style="@style/Widget.App.Button.SolidWithBorder"
-        />
+        style="@style/Widget.App.Button.SolidWithBorder" />
 
     <Space
+        android:id="@+id/bottomSpace"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
     <Button
+        android:id="@+id/signUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/sign_up"
         android:textColor="@color/black"
         style="@style/Widget.App.Button.Outlined"
-        android:layout_gravity="end"/>
+        android:layout_gravity="end" />
 
 </LinearLayout>

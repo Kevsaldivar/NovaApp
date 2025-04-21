@@ -66,3 +66,4 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_gravity="center"/>
+</LinearLayout>
