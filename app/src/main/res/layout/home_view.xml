@@ -9,15 +9,18 @@
     tools:context=".SignIn">
 
     <Space
+        android:id="@+id/topSpace"
         android:layout_width="match_parent"
-        android:layout_height="24dp"
-        />
+        android:layout_height="24dp" />
 
     <RelativeLayout
+        android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp">
+
         <ImageView
+            android:id="@+id/profileImageView"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/circular_image_background"
@@ -25,7 +28,9 @@
             android:layout_alignParentStart="true"
             android:contentDescription="@string/app_name"
             android:src="@drawable/baseline_person_24" />
+
         <ImageView
+            android:id="@+id/menuImageView"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/circular_image_background"
@@ -36,93 +41,116 @@
     </RelativeLayout>
 
     <Space
+        android:id="@+id/middleSpace"
         android:layout_width="match_parent"
-        android:layout_height="24dp"
-        />
+        android:layout_height="24dp" />
 
     <TextView
+        android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="@string/welcome"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_gravity="start"/>
+        android:layout_gravity="start" />
 
     <LinearLayout
+        android:id="@+id/actionCategoryLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:padding="8dp">
+
         <ImageView
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_weight="1" android:contentDescription="@string/app_name"
-        android:scaleType="fitXY"
-        android:src="@drawable/action_category" />
+            android:id="@+id/actionImageView"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/action_category" />
 
         <TextView
+            android:id="@+id/actionTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/action_category"
-            android:textSize="18sp" android:layout_marginStart="8dp" />
+            android:textSize="18sp"
+            android:layout_marginStart="8dp" />
     </LinearLayout>
 
     <Space
+        android:id="@+id/spaceAfterAction"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        />
+        android:layout_height="30dp" />
 
     <LinearLayout
+        android:id="@+id/dramaCategoryLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:padding="8dp">
+
         <ImageView
+            android:id="@+id/dramaImageView"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_weight="1" android:contentDescription="@string/app_name"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
             android:scaleType="fitXY"
             android:src="@drawable/drama_category" />
 
         <TextView
+            android:id="@+id/dramaTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/drama_category"
-            android:textSize="18sp" android:layout_marginStart="8dp" />
+            android:textSize="18sp"
+            android:layout_marginStart="8dp" />
     </LinearLayout>
 
     <Space
+        android:id="@+id/spaceAfterDrama"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        />
+        android:layout_height="30dp" />
 
+    <!-- Familia -->
     <LinearLayout
+        android:id="@+id/familyCategoryLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:padding="8dp">
+
         <ImageView
+            android:id="@+id/familyImageView"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_weight="1" android:contentDescription="@string/app_name"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
             android:scaleType="fitXY"
             android:src="@drawable/family_category" />
 
         <TextView
+            android:id="@+id/familyTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/family_category"
-            android:textSize="18sp" android:layout_marginStart="8dp" />
+            android:textSize="18sp"
+            android:layout_marginStart="8dp" />
     </LinearLayout>
+
     <Space
+        android:id="@+id/spaceAfterFamily"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        />
+        android:layout_height="30dp" />
+
     <LinearLayout
+        android:id="@+id/moreCategoryLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -130,14 +158,12 @@
         android:padding="8dp">
 
         <Button
+            android:id="@+id/moreCategoryButton"
             android:layout_width="300dp"
             android:layout_height="48dp"
             android:text="@string/more_category"
             android:backgroundTint="@color/black"
-            style="@style/Widget.App.Button.SolidWithBorder"
-            />
-
-</LinearLayout>
-
+            style="@style/Widget.App.Button.SolidWithBorder" />
+    </LinearLayout>
 
 </LinearLayout>
