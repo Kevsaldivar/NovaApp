@@ -26,7 +26,7 @@ public class SignUpActivity extends AppCompatActivity {
         Button createAccountButton = findViewById(R.id.createAccountButton);
 
         createAccountButton.setOnClickListener(v -> {
-            String usuario = usernameEditText.getText().toString();
+            String usuario = emailEditText.getText().toString().trim().toLowerCase();
             String password = passwordEditText.getText().toString();
             String confirm = confirmPasswordEditText.getText().toString();
 
